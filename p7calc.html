@@ -1,0 +1,73 @@
+<html>
+<head>
+<title>Program 7</title>
+<style>
+input[type=button] {
+width: 60px;
+height: 60px;
+margin: 5px;
+background: #888;
+font-size: 20px;
+border:none;
+border-radius:12px;
+}
+input[type=button]:hover {
+background: #CCC;
+cursor:pointer;
+}
+#display {
+width: 270px;
+height: 40px;
+background-color: white;
+border-radius:12px;
+margin-left:10px;
+}
+table {
+border: 1px solid black;
+border-collapse: separate !important;
+
+background-color: pink;
+border-radius:12px;
+padding:10px;
+}
+</style>
+</head>
+<body>
+<form name="Calculator">
+<table>
+<tr>
+<td>
+<input type="text" id="display" name="Input">
+<br>
+</td>
+</tr>
+<tr>
+<td>
+<input type="button" value=" 1 " OnClick="Calculator.Input.value += '1'">
+<input type="button" value=" 2 " OnCLick="Calculator.Input.value += '2'">
+<input type="button" value=" 3 " OnClick="Calculator.Input.value += '3'">
+<input type="button" value=" + " OnClick="Calculator.Input.value += ' + '">
+<br>
+<input type="button" value=" 4 " OnClick="Calculator.Input.value += '4'">
+<input type="button" value=" 5 " OnClick="Calculator.Input.value += '5'">
+<input type="button" value=" 6 " OnClick="Calculator.Input.value += '6'">
+<input type="button" value=" - " OnClick="Calculator.Input.value += '-'">
+<br>
+<input type="button" value=" 7 " OnClick="Calculator.Input.value += '7'">
+<input type="button" value=" 8 " OnClick="Calculator.Input.value += '8'">
+
+<input type="button" value=" 9 " OnClick="Calculator.Input.value += '9'">
+<input type="button" value=" * " OnClick="Calculator.Input.value += '*'">
+<br>
+<input type="button" value=" c " OnClick="Calculator.Input.value = ' '">
+<input type="button" value=" 0 " OnClick="Calculator.Input.value += '0'">
+<input type="button" value=" = " OnClick="Calculator.Input.value =
+eval(Calculator.Input.value)">
+<input type="button" value=" / " OnClick="Calculator.Input.value += '/'">
+<br>
+</td>
+</tr>
+</table>
+</form>
+</body>
+</html>
