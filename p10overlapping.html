@@ -1,0 +1,41 @@
+<html>
+<head>
+<title>Program 10</title>
+<style>
+h1 {text-align: center;}
+.im1 {
+position: absolute;
+left: 10%; top: 10%;
+z-index: 0;
+}
+
+.im2 {
+position: absolute;
+left: 30%; top: 30%;
+z-index: 1;
+}
+.im3 {
+position: absolute;
+left: 50%; top: 50%;
+z-index: 2;
+}
+</style>
+<script>
+var topIndex = 2;
+function moveToTop(picture) {
+picture.style.zIndex = ++topIndex;
+}
+</script>
+</head>
+<body><div>
+<h1>Image Overlap Demo</h1>
+<div id="image-container">
+<img id="im1" class="im1" src="1.jpg" onmouseover="moveToTop(this)" width="
+400" height="300">
+<img id="im2" class="im2" src="2.jpg" onmouseover="moveToTop(this)" width="
+400" height="300">
+<img id="im3" class="im3" src="3.jpg" onmouseover="moveToTop(this)"
+width="400" height="300">
+</div>
+</body>
+</html>
